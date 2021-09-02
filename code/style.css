@@ -1,56 +1,54 @@
 body {
-    margin: 0;
-    font-family: Montserrat;
-    color: purple;
+  margin: 0;
+  font-family: Montserrat;
 }
 
 .main-content {
-    width: 300px;
-    margin: 40px auto;
+  width: 300px;
+  margin: 40px auto;
 }
 
 h1 {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
 p {
-    margin: 2px;
-    font-size: 21px;
+  margin: 2px;
+  font-size: 21px;
 }
 
 /* TODAYS WEATHER */
 .todays-weather {
-    margin-top: 25%;
-    font-weight: bold;
-    font-size: 25px;
+  margin-top: 25%;
+  font-weight: bold;
+  font-size: 25px;
 }
 
 .todays-weather-small {
-    margin-left: 8px;
+  margin-left: 8px;
 }
 
 /* FIVE DAY FORECAST */
 .weekdays-container {
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 1.5px dashed;
-    padding-bottom: 7px;
-    padding-top: 6px;
-    font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1.5px dashed;
+  padding-bottom: 7px;
+  padding-top: 6px;
+  font-size: 18px;
 }
 
 .five-day-forecast :last-child {
-    border-bottom: none;
+  border-bottom: none;
 }
 
 @media (min-width: 668px) {
-    .main-content {
-        padding: 37px 25px 65px;
-        border: solid black 0.5px;
-        border-radius: 10px;
-    }
+  .main-content {
+    padding: 37px 25px 65px;
+    border-radius: 10px;
+  }
 
-    .weather-image {
-        width: 120px;
-    }
+  .weather-image {
+    width: 120px;
+  }
 }
