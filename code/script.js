@@ -48,6 +48,8 @@ fetch(apiUrlToday)
     // shows different text, image and background-color depending on the weather
     switch (weatherMain) {
       case "Clear":
+        gradientBackground.style.backgroundImage =
+          "linear-gradient(0deg, #fbf8ea 0%, #FDE37F 100%)";
         mainContent.style.backgroundColor = "#F7E9B9";
         mainContent.style.color = "#2A5510";
         mainContent.style.border = "3px solid #2a5510";
@@ -59,6 +61,8 @@ fetch(apiUrlToday)
         `;
         break;
       case "Rain" && "Thunderstorm" && "Drizzle" && "Mist":
+        gradientBackground.style.backgroundImage =
+          "linear-gradient(147deg, #164a68 0%, #A3DEF7 74%)";
         mainContent.style.backgroundColor = "#A3DEF7";
         mainContent.style.color = "#164A68";
         mainContent.style.border = "3px solid #164A68";
