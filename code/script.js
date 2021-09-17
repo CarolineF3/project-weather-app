@@ -2,6 +2,8 @@ const apiUrlToday =
   "https://api.openweathermap.org/data/2.5/weather?q=Stockholm,Sweden&units=metric&APPID=3340cbe473b3001d4487c919d349bee2";
 const apiUrlFiveDays =
   "https://api.openweathermap.org/data/2.5/forecast?q=Stockholm,Sweden&units=metric&APPID=3340cbe473b3001d4487c919d349bee2";
+
+const gradientBackground = document.getElementById("gradient-background");
 const mainContent = document.getElementById("main-content");
 const todaysWeatherSmall = document.getElementById("todays-weather-small");
 const todaysWeather = document.getElementById("todays-weather");
@@ -66,6 +68,8 @@ fetch(apiUrlToday)
         `;
         break;
       default:
+        gradientBackground.style.backgroundImage =
+          "linear-gradient(147deg, #959898 0%, #ffffff 74%)";
         mainContent.style.backgroundColor = "#F4F7F8";
         mainContent.style.color = "#F47775";
         mainContent.style.border = "3px solid #F47775";
